@@ -1,0 +1,285 @@
+/*////////MEDIA QUERIES////////*/
+@media (min-width: 261px) and (max-width: 480px){
+    /*--------INICIO--------*/
+    header{
+
+      top: 45%;
+      background-color: rgb(153,227,255);
+      background: linear-gradient(120deg, rgba(153,227,255,0.6505952722886029) 0%, rgba(6,240,225,1) 38%, rgba(105,230,255,0.6533963927367823) 100%);
+      }
+    header img{
+      top:40%;
+      width:44%;
+    }
+    #menu{
+            width:90%;
+            font-size:0.7em;
+            padding: 0 0 0 0.3%;
+            left: 10%;
+          }
+    #iconoMenu{
+        top: 4%;
+    }
+    #menu > li{
+      width: 24%;
+      padding: 0.3%;
+      margin-left: 0.3%;
+    }
+  /*----------------------------SECCIONES SERVICIOS----------------*/
+
+  #servicios{
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+  }
+  #seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionPlanifica h2, #seccionAvaluos h2{
+    left: 0;
+  }
+  #seccionAnalisis, #seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos{
+      top:20%;
+      width: 80%;
+      left: 10%;
+      height: auto;
+      padding: 1.5%;
+}
+#seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionPlanifica h2, #seccionAvaluos h2{
+      font-size:1em;
+}
+#seccionAnalisis p, #seccionInvestigacion p, #seccionFormacion p, #seccionFortalece p, #seccionPlanifica p, #seccionAvaluos p{
+      font-size: 1em;
+  }
+    /*---------SLIDESHOW---------*/
+
+    .slide{
+      width: 65%;
+      top:30%;
+      left:17%;
+    }
+    /*-------------------SERVICIOS---------------*/
+    #servs{
+      left:40%;
+      top:45%;
+      left: 45%;
+    }
+    #titServ{
+      top:13%;
+      font-size:1em;
+      left: 30%;
+    }
+    #servs > li{
+      width:100%;
+      height: 8%;
+    }
+    #servs li a{
+      font-size: 1em;
+    }
+}
+@media (min-width: 481px) and (max-width: 581px) {
+  /*--------INICIO--------*/
+  header{
+
+    top: 45%;
+    background-color: rgb(153,227,255);
+    background: linear-gradient(120deg, rgba(153,227,255,0.6505952722886029) 0%, rgba(6,240,225,1) 38%, rgba(105,230,255,0.6533963927367823) 100%);
+    }
+  header img{
+    top:40%;
+    width:44%;
+  }
+  #menu{
+          width:90%;
+          font-size:0.7em;
+          padding: 0 0 0 0.3%;
+          left: 10%;
+        }
+  #iconoMenu{
+      top: 4%;
+  }
+  #menu > li{
+    width: 24%;
+    padding: 0.3%;
+    margin-left: 0.3%;
+  }
+  /*---------SLIDESHOW---------*/
+
+  .slide{
+    width: 65%;
+    top:30%;
+    left:17%;
+  }
+  /*-------------------SERVICIOS---------------*/
+  #servs{
+    left:40%;
+    top:45%;
+    left: 45%;
+    left: 45%;
+  }
+  #titServ{
+    top:13%;
+    font-size:1em;
+    left: 30%;
+  }
+  #servs > li{
+    width:100%;
+    height: 8%;
+  }
+  #servs li a{
+    font-size: 1em;
+  }
+}
+@media (min-width: 582px) and (max-width: 640px){
+  /*--------INICIO--------*/
+  header{
+
+    top: 45%;
+    background-color: rgb(153,227,255);
+    background: linear-gradient(120deg, rgba(153,227,255,0.6505952722886029) 0%, rgba(6,240,225,1) 38%, rgba(105,230,255,0.6533963927367823) 100%);
+    }
+  header img{
+    top:40%;
+    width:44%;
+  }
+  #menu{
+          width:90%;
+          font-size:0.7em;
+          padding: 0 0 0 0.3%;
+          left: 10%;
+        }
+  #iconoMenu{
+      top: 4%;
+  }
+  #menu > li{
+    width: 24%;
+    padding: 0.3%;
+    margin-left: 0.3%;
+  }
+  /*---------SLIDESHOW---------*/
+
+  .slide{
+    width: 65%;
+    top:30%;
+    left:17%;
+  }
+  /*-------------------SERVICIOS---------------*/
+  #servs{
+    left:40%;
+    top:45%;
+    left: 45%;
+  }
+  #titServ{
+    top:13%;
+    font-size:1em;
+    left: 30%;
+  }
+  #servs > li{
+    width:100%;
+    height: 8%;
+  }
+  #servs li a{
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width :641px) and (max-width : 767px) {
+  /*--------INICIO--------*/
+  header{
+
+    top: 45%;
+    background-color: rgb(153,227,255);
+    background: linear-gradient(120deg, rgba(153,227,255,0.6505952722886029) 0%, rgba(6,240,225,1) 38%, rgba(105,230,255,0.6533963927367823) 100%);
+    }
+  header img{
+    top:40%;
+    width:44%;
+  }
+  #menu{
+          width:90%;
+          font-size:0.7em;
+          padding: 0 0 0 0.3%;
+          left: 10%;
+        }
+  #iconoMenu{
+      top: 4%;
+  }
+  #menu > li{
+    width: 24%;
+    padding: 0.3%;
+    margin-left: 0.3%;
+  }
+  /*---------SLIDESHOW---------*/
+
+  .slide{
+    width: 65%;
+    top:30%;
+    left:17%;
+  }
+  /*-------------------SERVICIOS---------------*/
+  #servs{
+    left:40%;
+    top:45%;
+    left: 45%;
+  }
+  #titServ{
+    top:13%;
+    font-size:1em;
+    left: 30%;
+  }
+  #servs > li{
+    width:100%;
+    height: 8%;
+  }
+  #servs li a{
+    font-size: 1em;
+  }
+}
+@media only screen and (min-width :768px) and (max-width : 1024px) {
+  /*--------INICIO--------*/
+  header{
+
+    top: 45%;
+    background-color: rgb(153,227,255);
+    background: linear-gradient(120deg, rgba(153,227,255,0.6505952722886029) 0%, rgba(6,240,225,1) 38%, rgba(105,230,255,0.6533963927367823) 100%);
+    }
+  header img{
+    top:40%;
+    width:44%;
+  }
+  #menu{
+          width:90%;
+          font-size:0.7em;
+          padding: 0 0 0 0.3%;
+          left: 10%;
+        }
+  #iconoMenu{
+      top: 4%;
+  }
+  #menu > li{
+    width: 24%;
+    padding: 0.3%;
+    margin-left: 0.3%;
+  }
+  /*---------SLIDESHOW---------*/
+
+  .slide{
+    width: 65%;
+    top:30%;
+    left:17%;
+  }
+  /*-------------------SERVICIOS---------------*/
+  #servs{
+    left:40%;
+    top:45%;
+    left: 45%;
+  }
+  #titServ{
+    top:13%;
+    font-size:1em;
+    left: 30%;
+  }
+  #servs > li{
+    width:100%;
+    height: 8%;
+  }
+  #servs li a{
+    font-size: 1em;
+  }
+}
