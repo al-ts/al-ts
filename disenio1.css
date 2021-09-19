@@ -1,0 +1,594 @@
+
+body, html {
+
+  height: 100%;
+  margin: 0;
+  /*overflow: hidden;*/
+}
+a{text-decoration:none;}
+li{list-style:none;}
+
+
+/*--------INICIO--------*/
+header{
+
+  width: 100%;
+  height: 100%;
+  background-image:url(imgs/inicial1.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: top;
+}
+header img{
+
+    position: absolute;
+    height: auto;
+    width: 22%;
+    left: 45%;
+    top:35%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    filter: brightness(50%);
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    animation-name: aniLogo;
+    animation-duration: 3s;
+  }
+@keyframes aniLogo {
+    from {left: -50%}
+    to {left: 45%;}
+  }
+header img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    }
+
+
+/*--------MENU--------*/
+#iconoMenu{
+        display: none;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1000;
+        font-size: 2em;
+        width: 3%;
+        text-align: center;
+        top: 5%;
+        left: 2%;
+        color: #007f54;
+        transition-property: color;
+        transition-duration: 3s;
+        transition-timing-function: ease-out;
+        transition-property: font-size;
+        transition-duration: 1s;
+        transition-timing-function: ease-out;
+
+    }
+#iconoMenu:hover{
+          color: turquoise;
+          font-size: 2.5em;
+          cursor: pointer;
+    }
+
+
+  #menu{
+
+
+    overflow: hidden;
+    position: fixed;
+    z-index: 1000;
+    font-size:1em;
+    width:48%;
+    top: 5%;
+    left: 5%;
+    text-transform: uppercase;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+
+    }
+  #menu > li{
+
+    float: left;
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid white;
+    padding: 1%;
+    margin-left: 2%;
+    width: 20%;
+    background-color: white;
+    opacity: 0.7;
+    display: none;
+
+  }
+  #menu > li a{
+        color: #007f54;
+        padding: 2%;
+        font-weight:bold;
+        display: block;
+  }
+  #menu > li:hover{
+        background-color: turquoise;
+  }
+
+#volver a{
+  font-size: 2.5em;
+  position: absolute;
+  top:45%;
+  left: 2%;
+  color: #007f54;
+  font-weight: bold;
+  transition-property: color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  transition-property: font-size;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+}
+#volver a{
+  text-decoration: none;
+}
+#volver a:hover{
+  color: turquoise;
+  cursor: pointer;
+  font-size: 3em;
+}
+/*----------------SERVIVIOS--------------*/
+#servicios{
+
+      overflow:auto;
+      display:none;
+
+      width: 100%;
+      height: 100%;
+      margin-top:10%;
+      position: relative;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-image:url(imgs/inicial2.jpg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: bottom;
+      filter: grayscale(30%);
+      font-family: 'Titillium Web', sans-serif;
+
+
+}
+
+#titServ{
+
+      font-family: 'Alumni Sans', sans-serif;
+      color: green;
+      font-size: 2em;
+      text-align: center;
+      position: absolute;
+      left: 49%;
+      top: 5%;
+      width: 45%;
+    }
+
+
+
+/********-----MENU SERVICIOS------*********/
+#servs{
+  position: absolute;
+  padding: 0;
+  width: 30%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+  height: 75%;
+  left: 60%;
+  top: 18%;
+  -ms-transform: rotate(-90deg); /* IE 9 */
+  transform: rotate(-90deg); /* Standard syntax */
+  border-left: 1px solid green;
+}
+
+#servs > li{
+
+  text-align: left;
+  padding: 2%;
+  position: relative;
+  background-color: #0FC400;
+  margin-bottom: 5%;
+  top: 15%;
+  width:50%;
+  height: 10%;
+  left: 5%;
+  transition-property: width;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-out;
+
+}
+#servs li:hover{
+  width: 60%;
+  cursor: pointer;
+}
+#servs li a{
+
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.9em;
+  transition-property: display;
+  transition-duration: 0.7s;
+  width: 100%;
+  color: green;
+  font-weight:lighter;
+
+}
+#servs li:hover a{
+
+  font-weight: bold;
+  opacity: 0.5;
+  padding-left: 2%;
+  margin-left:0;
+  right:70%;
+
+}
+
+/*********------SECCIONES-------***********/
+#seccionAnalisis, #seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos{
+  display: none;
+  position: absolute;
+  width: 45%;
+  height: 55%;
+  left: 6%;
+  top: 28%;
+  padding: 1%;
+  box-shadow: 0 4px 8px 0 rgba(86, 232, 242, 0.2), 0 6px 20px 0 rgba(86, 232, 242, 0.19);
+  border-radius: 25px;
+  background-color:  PaleTurquoise;
+  opacity: 0.7;
+
+}
+#seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionPlanifica h2, #seccionAvaluos h2{
+  text-align: right;
+  font-weight: bolder;
+  position: relative;
+  left: 100%;
+  margin-left: 5%;
+  font-size: 2em;
+  text-align: center;
+  width: 100%;
+  color: DarkTurquoise;
+}
+#seccionAnalisis p, #seccionInvestigacion p, #seccionFormacion p, #seccionFortalece p, #seccionPlanifica p, #seccionAvaluos p{
+
+  text-align: justify;
+  font-size: 1.5em;
+  color: #03474c;
+  font-family: 'Old Standard TT', serif;
+
+
+}
+
+/*---------SLIDESHOW---------*/
+
+.slide{
+  width: 35%;
+  position: relative;
+  left: 10%;
+  top:30%;
+}
+.imgsSlide{
+  display: none;
+  width: 100%;
+}
+.w3-animate-fading {
+    animation: fading 10s infinite;
+}
+/*-----------------INSTITUCIONAL-----------------*/
+
+#institucional{
+
+      overflow:auto;
+      display: none;
+      background-image:url(imgs/network.jpg);
+      background-repeat: repeat-y;
+      background-size: 100%;
+      width: 100%;
+      height: 100%;
+      margin-top:10%;
+      position: relative;
+      left: 50%;
+      top: 10%;
+      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      background-size: 100%;
+      background-position: top;
+      font-family: 'Titillium Web', sans-serif;
+}
+#titInst{
+
+      color: green;
+      font-size: 2em;
+      text-align: center;
+      position: absolute;
+      left: 15%;
+      top: 5%;
+      width: 45%;
+    }
+
+#circulo {
+    position: absolute;
+    left: 45%;
+    top:32%;
+     width: 250px;
+     height: 250px;
+     -moz-border-radius: 60%;
+     -webkit-border-radius: 60%;
+     border-radius: 60%;
+     background: #c8e4e8;
+     transition-property: left;
+     transition-duration: 0.9s;
+     transition-timing-function: ease-out;
+
+}
+#circulo:hover {
+    cursor: pointer;
+}
+
+#circulo:hover div{
+    display: block;
+}
+#cuarto-quienes {
+
+    position: absolute;
+    opacity: 0.7;
+    background-color: DarkTurquoise;
+    left: 51%;
+    top:2%;
+     width: 236px;
+     height: 236px;
+     border: 1px solid turquoise;
+     -moz-border-radius: 0 100% 0 0;
+     -webkit-border-radius: 0 100% 0 0;
+     border-radius: 0 100% 0 0;
+     transition-property: display;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+     transition-property: opacity;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+     transition-property: width;
+     transition-duration: 0.9s;
+     transition-timing-function: ease-out;
+     transition-property: height;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+
+}
+
+#cuarto-quienes p{
+
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 50%;
+      font-weight: bold;
+      color: green;
+
+}
+#cuarto-quienes:hover, #cuarto-objeto:hover, #cuarto-mision:hover, #cuarto-vision:hover{
+      cursor: pointer;
+      opacity: 1;
+      background: DarkTurquoise;
+}
+#cuarto-quienes:hover p, #cuarto-objeto:hover p, #cuarto-mision:hover p, #cuarto-vision:hover p{
+      display: block;
+      cursor: pointer;
+}
+#cuarto-objeto {
+    position: absolute;
+    opacity: 0.7;
+    background-color: DarkTurquoise;
+     width: 236px;
+     height: 236px;
+     top:2%;
+     left: 2%;
+     border: 1px solid turquoise;
+     -moz-border-radius: 0 100% 0 0;
+     -webkit-border-radius: 0 100% 0 0;
+     border-radius: 0 100% 0 0;
+     -ms-transform: rotate(-90deg); /* IE 9 */
+     transform: rotate(-90deg); /* Standard syntax */
+     transition-property: opacity;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+     transition-property: width;
+     transition-duration: 0.9s;
+     transition-timing-function: ease-out;
+     transition-property: height;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+}
+#cuarto-objeto p{
+
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 50%;
+      font-weight: bold;
+      color: green;
+      -ms-transform: rotate(90deg); /* IE 9 */
+      transform: rotate(90deg); /* Standard syntax */
+
+}
+
+#cuarto-mision {
+
+    position: absolute;
+    opacity: 0.7;
+    background-color: DarkTurquoise;
+     width: 236px;
+     height: 236px;
+     top:50%;
+     left: 2%;
+     border: 1px solid turquoise;
+     -moz-border-radius: 0 100% 0 0;
+     -webkit-border-radius: 0 100% 0 0;
+     border-radius: 0 100% 0 0;
+     -ms-transform: rotate(-180deg); /* IE 9 */
+     transform: rotate(-180deg); /* Standard syntax */
+     transition-property: opacity;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+     transition-property: width;
+     transition-duration: 0.9s;
+     transition-timing-function: ease-out;
+     transition-property: height;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+}
+#cuarto-mision p{
+
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 50%;
+      font-weight: bold;
+      color: green;
+      -ms-transform: rotate(180deg); /* IE 9 */
+      transform: rotate(180deg); /* Standard syntax */
+
+}
+
+#cuarto-vision {
+
+    position: absolute;
+    opacity: 0.7;
+    background-color: DarkTurquoise;
+    left: 51%;
+    top:50%;
+     width: 236px;
+     height: 236px;
+     border: 1px solid turquoise;
+     -moz-border-radius: 0 100% 0 0;
+     -webkit-border-radius: 0 100% 0 0;
+     border-radius: 0 100% 0 0;
+     -ms-transform: rotate(90deg); /* IE 9 */
+     transform: rotate(90deg); /* Standard syntax */
+     transition-property: display;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+     transition-property: opacity;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+     transition-property: width;
+     transition-duration: 0.9s;
+     transition-timing-function: ease-out;
+     transition-property: height;
+     transition-duration: 0.7s;
+     transition-timing-function: ease-out;
+
+}
+#cuarto-vision p{
+
+      font-weight: bolder;
+      font-size: 1.5em;
+      left: -50%;
+      color: green;
+      -ms-transform: rotate(-90deg); /* IE 9 */
+      transform: rotate(-90deg); /* Standard syntax */
+
+}
+
+#quienes, #objeto, #misionN, #visionN{
+
+    display: none;
+    position: absolute;
+    background-color: #c8e4e8;
+    opacity: 0.7;
+    width: 35%;
+    height: 50%;
+    left: 10%;
+    top: 32%;
+    padding: 1%;
+    box-shadow: 0 4px 8px 0 rgba(86, 232, 242, 0.2), 0 6px 20px 0 rgba(86, 232, 242, 0.19);
+    border-radius: 25px;
+
+}
+#quienes h2, #objeto h2, #misionN h2, #visionN h2{
+
+  text-align: center;
+  margin-bottom: 5%;
+
+}
+#quienes p, #objeto p, #misionN p, #visionN p{
+    text-align: justify;
+    font-size: 1.5em;
+    padding: 2%;
+    font-family: 'Old Standard TT', serif;
+}
+
+/*-----------------CONTANCTO-------------------*/
+#contacto{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #c8e4e8;
+  padding: 20px;
+  display: none;
+  font-family: 'Old Standard TT', serif;
+  color: DarkTurquoise;
+}
+
+#mapa{
+  display: block;
+  position: absolute;
+  width: 24%;
+  height: 48%;
+  left: 10%;
+  top:25%;
+}
+#mapa p{
+
+  float: left;
+  text-align: left;
+  margin: 0 15% 0 0;
+}
+
+
+iframe{
+  width:100%;
+  height: 100%;
+  position: relative;
+}
+
+#contactenos{
+  position: relative;
+  width:35%;
+  left: 55%;
+  border-radius: 15px;
+  padding: 3%;
+}
+#contactenos h2{
+    color: green;
+    text-align: center;
+    font-family: 'Old Standard TT', serif;
+}
+
+input[type=text], select, textarea {
+
+  width: 100%;
+  padding: 12px;
+  background-color: PaleTurquoise;
+  border-radius: 4px;
+  border-color: PaleTurquoise;
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+input[type=submit] {
+  background-color: DarkTurquoise;
+  color: white;
+  padding: 1% 2%;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=submit]:hover {
+  background-color: turquoise;
+}
