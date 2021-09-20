@@ -52,9 +52,9 @@ header img:hover{
         position: fixed;
         z-index: 1000;
         font-size: 2em;
-        width: 3%;
+        width: 6%;
         text-align: center;
-        top: 5%;
+        top: 6%;
         left: 2%;
         color: #007f54;
         transition-property: color;
@@ -65,6 +65,9 @@ header img:hover{
         transition-timing-function: ease-out;
 
     }
+#iconoMenu img{
+        width:80%;
+}
 #iconoMenu:hover{
           color: turquoise;
           font-size: 2.5em;
@@ -73,7 +76,6 @@ header img:hover{
 
 
   #menu{
-
 
     overflow: hidden;
     position: fixed;
@@ -110,35 +112,19 @@ header img:hover{
   #menu > li:hover{
         background-color: turquoise;
   }
+.subMenu{display: none; }
+.subMenu > section{margin-top: 2%;}
+.subMenu li a{display: none;}
+#menu >li:hover .subMenu{
+    display: block;
+    cursor: pointer;
+}
 
-#volver a{
-  font-size: 2.5em;
-  position: absolute;
-  top:45%;
-  left: 2%;
-  color: #007f54;
-  font-weight: bold;
-  transition-property: color;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-  transition-property: font-size;
-  transition-duration: 1s;
-  transition-timing-function: ease-out;
-}
-#volver a{
-  text-decoration: none;
-}
-#volver a:hover{
-  color: turquoise;
-  cursor: pointer;
-  font-size: 3em;
-}
 /*----------------SERVIVIOS--------------*/
 #servicios{
 
       overflow:auto;
       display:none;
-
       width: 100%;
       height: 100%;
       margin-top:10%;
@@ -228,7 +214,21 @@ header img:hover{
   right:70%;
 
 }
+/*---------SLIDESHOW---------*/
 
+.slide{
+  width: 35%;
+  position: relative;
+  left: 10%;
+  top:30%;
+}
+.imgsSlide{
+  display: none;
+  width: 100%;
+}
+.w3-animate-fading {
+    animation: fading 10s infinite;
+}
 /*********------SECCIONES-------***********/
 #seccionAnalisis, #seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos{
   display: none;
@@ -260,26 +260,11 @@ header img:hover{
   text-align: justify;
   font-size: 1.5em;
   color: #03474c;
-  font-family: 'Old Standard TT', serif;
+/*  font-family: 'Old Standard TT', serif;*/
 
 
 }
 
-/*---------SLIDESHOW---------*/
-
-.slide{
-  width: 35%;
-  position: relative;
-  left: 10%;
-  top:30%;
-}
-.imgsSlide{
-  display: none;
-  width: 100%;
-}
-.w3-animate-fading {
-    animation: fading 10s infinite;
-}
 /*-----------------INSTITUCIONAL-----------------*/
 
 #institucional{
@@ -519,8 +504,51 @@ header img:hover{
     text-align: justify;
     font-size: 1.5em;
     padding: 2%;
-    font-family: 'Old Standard TT', serif;
+    /*font-family: 'Old Standard TT', serif;*/
 }
+/*-------------------------PROPUESTAS--------------------*/
+.cssModal {
+
+  height: 100%;
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1001;
+  left: 0;
+  top: 0;
+  background-color: rgb(255,255,255);
+  background-color: rgba(255,255255,255, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.cssModal h2,h4,h5{
+  text-align: center;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.cssModal h6{
+  font-size: 0.8em;
+  font-style: italic;
+
+}
+.cssModal h4{
+  font-size: 0.9em;
+  font-weight:bolder;
+}
+.contenidoCaracterización {
+  position: relative;
+  top: 10%;
+  padding: 12%;
+  width: 100%;
+  height: 100%;
+  text-align: justify;
+  margin-top: 2%;
+  color:black;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 
 /*-----------------CONTANCTO-------------------*/
 #contacto{
