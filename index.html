@@ -620,7 +620,7 @@ $(document).ready(function(){
 document.addEventListener('DOMContentLoaded', iniciaQueries);
 
   function iniciaQueries(){
-      let queries = window.matchMedia(" (min-width: 261px) and (min-width: 480px)");
+      let queries = window.matchMedia(" (min-width: 261px) and (max-width: 480px)");
 
         if(queries.matches){
             document.querySelector('#circulo').style.width = "50%";
