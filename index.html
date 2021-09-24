@@ -429,7 +429,6 @@ function carrusel(){
   setTimeout(carrusel, 8000);
 }
 
-
 /*------------BARRAS MENU--------------------*/
 $(document).ready(function(){
   $("#iconoMenu").click(function(){
@@ -508,7 +507,7 @@ $(document).ready(function(){
   /*-------------------INSTITUCIONAL-------------------*/
 
     $("#inst").click(function(){
-        $("#circulo").animate({width: '35%', height:'74%', left: '30%', top:'22%'}, 1500,"swing");
+        /*$("#circulo").animate({width: '45%', height:'25%', left: '30%', top:'22%'}, 1500,"swing");*/
         $("#institucional").css({"display":"block"});
         $("#titInst").animate({left:'49%'}, 2000);
         $("#menu").animate({position:'fixed'}, 200);
@@ -616,6 +615,20 @@ $(document).ready(function(){
   });
 });
 
+/*---------------------PRUEBAS JS JQ MEDIAQUERIES-----------------*/
+
+document.addEventListener('DOMContentLoaded', iniciaQueries);
+
+  function iniciaQueries(){
+      let queries = window.matchMedia(" (min-width: 261px) and (min-width: 480px)");
+
+        if(queries.matches){
+            document.querySelector('#circulo').style.width = "50%";
+            document.querySelector('#circulo').style.height = "55%";
+        }
+  }
+
+/*---------------------FIN PRUEBAS JS JQ MEDIAQUERIES-----------------*/
 </script>
 
 <!---***************************FIN Script**********************-->
