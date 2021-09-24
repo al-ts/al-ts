@@ -32,7 +32,7 @@
     <li><a id="inst" href="#institucional">institucional</a></li>
     <li><a id="proP" href="#propuestas">Propuestas</a>
         <section class="subMenu">
-          <li><a class="uni" >UNIDADES PRODUCTIVAS</a></li>
+          <li><a class="uni">UNIDADES PRODUCTIVAS</a></li>
         </section>
 </li>
     <li><a id="cont" href="#contacto">contactenos</a></li>
@@ -508,16 +508,16 @@ $(document).ready(function(){
   /*-------------------INSTITUCIONAL-------------------*/
 
     $("#inst").click(function(){
-        $("#circulo").animate({width: '500px', height:'500px', left: '30%', top:'22%'}, 1500,"swing");
+        $("#circulo").animate({width: '35%', height:'74%', left: '30%', top:'22%'}, 1500,"swing");
         $("#institucional").css({"display":"block"});
         $("#titInst").animate({left:'49%'}, 2000);
         $("#menu").animate({position:'fixed'}, 200);
         $("#visionN, #misionN, #objeto, #quienes").fadeOut("slow");
         $("#cuarto-objeto p, #cuarto-quienes p, #cuarto-mision p, #cuarto-vision p").css({"display":"block"});
-        $("#cuarto-objeto").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"2%"});
-        $("#cuarto-mision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"2%"});
-        $("#cuarto-vision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"51%"});
-        $("#cuarto-quienes").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"51%"});
+        $("#cuarto-objeto").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
+        $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
+        $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
+        $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
         });
     $("#logo").click(function(){
       $("#servicios").css({"display":"block"});
@@ -529,28 +529,28 @@ $(document).ready(function(){
     $("#cuarto-quienes").click(function(){
       $("#quienes").fadeToggle("slow");
       $("#circulo").css({"left": "55%"});
-      $("#cuarto-quienes").css({"position": "absolute", "width":"260px", "height":"260px", "top":"-2%", "display":"block", "background-color":"DarkTurquoise"});
+      $("#cuarto-quienes").css({"position": "absolute", "width":"49%", "height":"49%", "top":"-2%", "display":"block", "background-color":"DarkTurquoise"});
         $("#cuarto-quienes p").css({"display":"block"});
       $("#cuarto-objeto").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"2%"});
       $("#cuarto-objeto p, #cuarto-mision p, #cuarto-vision p").css({"display":"none"});
         $("#objeto, #misionN, #visionN").fadeOut("slow");
-      $("#cuarto-mision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"2%"});
-      $("#cuarto-vision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"51%"});
+      $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
+      $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
 
       });
 
     $("#cuarto-objeto").click(function(){
       $("#objeto").fadeToggle("slow");
       $("#circulo").css({"left": "55%"});
-      $("#cuarto-objeto").css({"position": "absolute", "width":"260px", "height":"260px", "top":"-2%", "left":"-2%","display":"block", "background-color":"DarkTurquoise"});
+      $("#cuarto-objeto").css({"position": "absolute", "width":"49%", "height":"49%", "top":"-2%", "left":"-2%","display":"block", "background-color":"DarkTurquoise"});
         $("#cuarto-objeto p").css({"display":"block"});
-      $("#cuarto-quienes").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"51%"});
+      $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%px", "height":"47.5%px", "top":"2%", "left":"51%"});
       $("#cuarto-quienes p").css({"display":"none"});
         $("#quienes").fadeOut("slow");
-      $("#cuarto-mision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"2%"});
+      $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%px", "height":"47.5%px", "top":"50%", "left":"2%"});
       $("#cuarto-mision p").css({"display":"none"});
         $("#misionN").fadeOut("slow");
-      $("#cuarto-vision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"51%"});
+      $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%px", "height":"47.5%px", "top":"50%", "left":"51%"});
       $("#cuarto-vision p").css({"display":"none"});
         $("#visionN").fadeOut("slow");
     });
@@ -558,15 +558,15 @@ $(document).ready(function(){
   $("#cuarto-mision").click(function(){
     $("#misionN").fadeToggle("slow");
     $("#circulo").css({"left": "55%"});
-    $("#cuarto-mision").css({"position": "absolute", "width":"260px", "height":"260px", "top":"52%", "left":"-2%","display":"block", "background-color":"DarkTurquoise"});
+    $("#cuarto-mision").css({"position": "absolute", "width":"49%", "height":"49%", "top":"52%", "left":"-2%","display":"block", "background-color":"DarkTurquoise"});
       $("#cuarto-mision p").css({"display":"block"});
-    $("#cuarto-quienes").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"51%"});
+    $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
     $("#cuarto-quienes p").css({"display":"none"});
       $("#quienes").fadeOut("slow");
-    $("#cuarto-objeto").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"2%"});
+    $("#cuarto-objeto").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
     $("#cuarto-objeto p").css({"display":"none"});
       $("#objeto").fadeOut("slow");
-    $("#cuarto-vision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"51%"});
+    $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
     $("#cuarto-vision p").css({"display":"none"});
       $("#visionN").fadeOut("slow");
 
@@ -575,15 +575,15 @@ $(document).ready(function(){
   $("#cuarto-vision").click(function(){
     $("#visionN").fadeToggle("slow");
     $("#circulo").css({"left": "55%"});
-    $("#cuarto-vision").css({"position": "absolute", "width":"260px", "height":"260px", "top":"52%", "left":"52%","display":"block", "background-color":"DarkTurquoise"});
+    $("#cuarto-vision").css({"position": "absolute", "width":"49%", "height":"49%", "top":"52%", "left":"52%","display":"block", "background-color":"DarkTurquoise"});
       $("#cuarto-vision p").css({"display":"block"});
-    $("#cuarto-quienes").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"51%"});
+    $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
     $("#cuarto-quienes p").css({"display":"none"});
         $("#quienes").fadeOut("slow");
-    $("#cuarto-objeto").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"2%"});
+    $("#cuarto-objeto").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
     $("#cuarto-objeto p").css({"display":"none"});
       $("#objeto").fadeOut("slow");
-    $("#cuarto-mision").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"50%", "left":"2%"});
+    $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
     $("#cuarto-mision p").css({"display":"none"});
       $("#misionN").fadeOut("slow");
   });
