@@ -14,19 +14,20 @@ header{
 
   width: 100%;
   height: 100%;
-  background-image:url(imgs/inicial1.jpg);
+  background-image:url(imgs/inicial2.jpg);
   background-repeat: no-repeat;
+  /*background-color: LightGreen;*/
+  opacity: 0.9;
   background-size: 100%;
   background-position: top;
-  background-color: #33CC00;
 }
 header img{
 
     position: absolute;
     height: auto;
     width: 22%;
-    left: 45%;
-    top:35%;
+    left: 47%;
+    top: 47%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     filter: brightness(50%);
@@ -38,7 +39,7 @@ header img{
   }
 @keyframes aniLogo {
     from {left: -50%}
-    to {left: 45%;}
+    to {left: 47%;}
   }
 header img:hover{
     opacity: 0.5;
@@ -64,13 +65,20 @@ header img:hover{
         transition-property: font-size;
         transition-duration: 1s;
         transition-timing-function: ease-out;
+        animation-name: aniIniciales;
+        animation-duration: 3s;
 
     }
+
+@keyframes aniIniciales {
+        from {width: 8%; top:8%;}
+        to {width: 6%; top: 6%;}
+      }
 #iconoMenu img{
         width:80%;
 }
 #iconoMenu:hover{
-          color: turquoise;
+          color: LimeGreen;
           font-size: 2.5em;
           cursor: pointer;
     }
@@ -86,7 +94,7 @@ header img:hover{
     top: 5%;
     left: 5%;
     text-transform: uppercase;
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Yaldevi', sans-serif;
     font-weight: bold;
 
     }
@@ -95,11 +103,12 @@ header img:hover{
     float: left;
     text-decoration: none;
     text-align: center;
-    border: 1px solid white;
+    border: 1px solid LightGreen;
+    border-radius: 3px;
     padding: 1%;
     margin-left: 2%;
     width: 20%;
-    background-color: white;
+    background-color: LightGreen;
     opacity: 0.7;
     display: none;
 
@@ -111,7 +120,7 @@ header img:hover{
         display: block;
   }
   #menu > li:hover{
-        background-color: turquoise;
+        background-color: LimeGreen;
   }
 .subMenu{display: none; }
 .subMenu > section{margin-top: 2%;}
@@ -128,27 +137,23 @@ header img:hover{
       display:none;
       width: 100%;
       height: 100%;
-      margin-top:10%;
       position: relative;
-      left: 50%;
-      top: 30%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      background-image:url(imgs/inicial2.jpg);
-      background-repeat: no-repeat;
+      /*background-image:url(imgs/inicial2.jpg);
+      background-repeat: no-repeat;*/
+      background-color: black;
+      opacity: 0.9;
       background-size: 100%;
       background-position: bottom;
-      filter: grayscale(30%);
-      font-family: 'Titillium Web', sans-serif;
+      font-family: 'Yaldevi', sans-serif;
 
 
 }
 
 #titServ{
 
-      font-family: 'Alumni Sans', sans-serif;
-      color: green;
+      font-family: 'Yaldevi', sans-serif;
+      font-weight: bolder;
+      color: LimeGreen;
       font-size: 2em;
       text-align: center;
       position: absolute;
@@ -157,8 +162,23 @@ header img:hover{
       width: 45%;
     }
 
-
-
+#introServicios {
+    position: absolute;
+    width: 50%;
+    top: 15%;
+    left: 35%;
+}
+#introServicios p {
+    text-align: right;
+    font-weight: bolder;
+    position: relative;
+    left: 28%;
+    margin-top: 15%;
+    font-size: 1.2em;
+    text-align: center;
+    width: 100%;
+    color: OldLace;
+}
 /********-----MENU SERVICIOS------*********/
 #servs{
   position: absolute;
@@ -180,7 +200,7 @@ header img:hover{
   text-align: left;
   padding: 2%;
   position: relative;
-  background-color: #0FC400;
+  background-color: LimeGreen;
   margin-bottom: 5%;
   top: 15%;
   width:50%;
@@ -197,7 +217,7 @@ header img:hover{
 }
 #servs li a{
 
-  font-family: 'Titillium Web', sans-serif;
+  font-family: 'Yaldevi', sans-serif;
   font-size: 1.9em;
   transition-property: display;
   transition-duration: 0.7s;
@@ -231,38 +251,31 @@ header img:hover{
     animation: fading 10s infinite;
 }
 /*********------SECCIONES-------***********/
-#seccionAnalisis, #seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos{
+#seccionAnalisis, #seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionAvaluos{
   display: none;
+  overflow-y: hidden;
   position: absolute;
-  width: 45%;
-  height: 55%;
-  left: 6%;
-  top: 28%;
-  padding: 1%;
-  box-shadow: 0 4px 8px 0 rgba(86, 232, 242, 0.2), 0 6px 20px 0 rgba(86, 232, 242, 0.19);
-  border-radius: 25px;
-  background-color:  PaleTurquoise;
-  opacity: 0.7;
-
+  width: 50%;
+  height: 100%;
+  top:0;
+  padding: 15% 4% 2% 4%;
+  background-color: SandyBrown;
 }
-#seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionPlanifica h2, #seccionAvaluos h2{
+#seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionAvaluos h2{
   text-align: right;
   font-weight: bolder;
   position: relative;
-  left: 100%;
-  margin-left: 5%;
-  font-size: 2em;
+  font-size: 2.5em;
+  border-bottom: 3px solid OldLace;
   text-align: center;
   width: 100%;
-  color: DarkTurquoise;
+  color: OldLace;
 }
-#seccionAnalisis p, #seccionInvestigacion p, #seccionFormacion p, #seccionFortalece p, #seccionPlanifica p, #seccionAvaluos p{
+#seccionAnalisis p, #seccionInvestigacion p, #seccionFormacion p, #seccionFortalece p, #seccionAvaluos p{
 
   text-align: justify;
-  font-size: 1.5em;
-  color: #03474c;
-/*  font-family: 'Old Standard TT', serif;*/
-
+  font-size: 2em;
+  color: OldLace;
 
 }
 
@@ -272,21 +285,16 @@ header img:hover{
 
       overflow:auto;
       display: none;
-      background-image:url(imgs/network.jpg);
-      background-repeat: repeat-y;
-      background-size: 100%;
+      /*background-image:url(imgs/network.jpg);
+      background-repeat: repeat-y;*/
+      background-color: black;
+      opacity: 0.9;
       width: 100%;
       height: 100%;
-      margin-top:10%;
       position: relative;
-      left: 50%;
-      top: 10%;
-      transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      background-size: 100%;
-      background-position: top;
-      font-family: 'Titillium Web', sans-serif;
+      left: 0;
+      top: 0;
+      font-family: 'Yaldevi', sans-serif;
 }
 #titInst{
 
@@ -294,21 +302,28 @@ header img:hover{
       font-size: 2em;
       text-align: center;
       position: absolute;
-      left: 15%;
+      left: 49%;
       top: 5%;
       width: 45%;
-    }
+      animation-name: tituloInstitucional;
+      animation-duration: 4s;
+  }
+@keyframes tituloInstitucional {
+from {left: 1%;}
+to {left: 49%;}
+}
+
 
 #circulo {
     position: absolute;
-    left: 45%;
-    top:32%;
-     width: 25%;
-     height: 25%;
+    left: 55%;
+    top:22%;
+     width: 500px;
+     height: 500px;
      -moz-border-radius: 60%;
      -webkit-border-radius: 60%;
      border-radius: 60%;
-     background: #c8e4e8;
+     background: SandyBrown;
      transition-property: left;
      transition-duration: 0.9s;
      transition-timing-function: ease-out;
@@ -325,12 +340,12 @@ header img:hover{
 
     position: absolute;
     opacity: 0.7;
-    background-color: DarkTurquoise;
+    background-color: LightGreen;
     left: 51%;
     top:2%;
      width: 47.5%;
      height: 47.5%;
-     border: 1px solid turquoise;
+     border: 1px solid LimeGreen;
      -moz-border-radius: 0 100% 0 0;
      -webkit-border-radius: 0 100% 0 0;
      border-radius: 0 100% 0 0;
@@ -361,21 +376,22 @@ header img:hover{
 #cuarto-quienes:hover, #cuarto-objeto:hover, #cuarto-mision:hover, #cuarto-vision:hover{
       cursor: pointer;
       opacity: 1;
-      background: DarkTurquoise;
+      background: OrangeRed;
 }
 #cuarto-quienes:hover p, #cuarto-objeto:hover p, #cuarto-mision:hover p, #cuarto-vision:hover p{
       display: block;
       cursor: pointer;
+      color: OrangeRed;
 }
 #cuarto-objeto {
     position: absolute;
     opacity: 0.7;
-    background-color: DarkTurquoise;
+    background-color: LightSalmon;
      width: 47.5%;
      height: 47.5%;
      top:2%;
      left: 2%;
-     border: 1px solid turquoise;
+     border: 1px solid LimeGreen;
      -moz-border-radius: 0 100% 0 0;
      -webkit-border-radius: 0 100% 0 0;
      border-radius: 0 100% 0 0;
@@ -407,12 +423,12 @@ header img:hover{
 
     position: absolute;
     opacity: 0.7;
-    background-color: DarkTurquoise;
+    background-color: LightSalmon;
      width: 47.5%;
      height: 47.5%;
      top:50%;
      left: 2%;
-     border: 1px solid turquoise;
+     border: 1px solid LimeGreen;
      -moz-border-radius: 0 100% 0 0;
      -webkit-border-radius: 0 100% 0 0;
      border-radius: 0 100% 0 0;
@@ -444,12 +460,12 @@ header img:hover{
 
     position: absolute;
     opacity: 0.7;
-    background-color: DarkTurquoise;
+    background-color: LightSalmon;
     left: 51%;
     top:50%;
      width: 47.5%;
      height: 47.5%;
-     border: 1px solid turquoise;
+     border: 1px solid LimeGreen;
      -moz-border-radius: 0 100% 0 0;
      -webkit-border-radius: 0 100% 0 0;
      border-radius: 0 100% 0 0;
@@ -482,30 +498,33 @@ header img:hover{
 
 #quienes, #objeto, #misionN, #visionN{
 
-    display: none;
-    position: absolute;
-    background-color: #c8e4e8;
-    opacity: 0.7;
-    width: 35%;
-    height: 50%;
-    left: 10%;
-    top: 32%;
-    padding: 1%;
-    box-shadow: 0 4px 8px 0 rgba(86, 232, 242, 0.2), 0 6px 20px 0 rgba(86, 232, 242, 0.19);
-    border-radius: 25px;
+  display: none;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  padding: 15% 4% 2% 4%;
+  background-color: SandyBrown;
 
 }
 #quienes h2, #objeto h2, #misionN h2, #visionN h2{
 
-  text-align: center;
   margin-bottom: 5%;
+  text-align: right;
+  font-weight: bolder;
+  position: relative;
+  font-size: 2.5em;
+  border-bottom: 3px solid OldLace;
+  text-align: center;
+  width: 100%;
+  color: OldLace;
+  font-family: 'Yaldevi', sans-serif;
 
 }
 #quienes p, #objeto p, #misionN p, #visionN p{
     text-align: justify;
     font-size: 1.5em;
     padding: 2%;
-    /*font-family: 'Old Standard TT', serif;*/
+    color: OldLace;
 }
 /*-------------------------PROPUESTAS--------------------*/
 .cssModal {
@@ -556,12 +575,11 @@ header img:hover{
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 5px;
   background-color: #c8e4e8;
   padding: 20px;
   display: none;
-  font-family: 'Old Standard TT', serif;
-  color: DarkTurquoise;
+  font-family: 'Yaldevi', sans-serif;
+  color: LightSalmon;
 }
 
 #mapa{
@@ -596,7 +614,7 @@ iframe{
 #contactenos h2{
     color: green;
     text-align: center;
-    font-family: 'Old Standard TT', serif;
+    font-family: 'Yaldevi', sans-serif;
 }
 
 input[type=text], select, textarea {
@@ -611,7 +629,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: DarkTurquoise;
+  background-color: LightSalmon;
   color: white;
   padding: 1% 2%;
   border: none;
@@ -619,5 +637,5 @@ input[type=submit] {
   cursor: pointer;
 }
 input[type=submit]:hover {
-  background-color: turquoise;
+  background-color: LimeGreen;
 }

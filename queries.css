@@ -4,8 +4,9 @@
     header{
 
       top: 45%;
-      background-color: rgb(153,227,255);
-      background: linear-gradient(120deg, rgba(153,227,255,0.6505952722886029) 0%, rgba(6,240,225,1) 38%, rgba(105,230,255,0.6533963927367823) 100%);
+      background-position: center;
+      background-size: cover;
+      height: 100%;
       }
     header img{
       top:40%;
@@ -32,16 +33,27 @@
     background-size: cover;
     height: 100%;
   }
+  #introServicios {
+      top: 8%;
+      left: -27%;
+      width: 100%;
+  }
+  #introServicios p {
+
+      font-size: 0.9em;
+      text-align: center;
+      width: 100%;
+      color: #03474c;
+  }
   #seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionPlanifica h2, #seccionAvaluos h2{
     left: 0;
     margin-top: 1%;
   }
   #seccionAnalisis, #seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos{
-      top:16%;
-      width: 80%;
-      left: 8%;
-      height: 62%;
-      padding: 0.5% 4.5% 4.5% 4.5%;
+
+      width: 100%;
+      height: 60%;
+      padding: 30% 4.5% 4.5% 4.5%;
 }
 #seccionAnalisis h2, #seccionInvestigacion h2, #seccionFormacion h2,#seccionFortalece h2, #seccionPlanifica h2, #seccionAvaluos h2{
       font-size:1.3em;
@@ -80,8 +92,50 @@
       font-size: 1em;
     }
     /*-----------------INSTITUCIONAL-----------------*/
+#titInst{
 
+          font-size: 1em;
+          left: 28%;
+          top: 12%;
+          animation-name: tituloInstitucional;
+          animation-duration: 4s;
+        }
+@keyframes tituloInstitucional {
+        from {left: -10%;}
+        to {left: 28%;}
+    }
+
+  #circulo {
+
+            left: 15%;
+            top:18%;
+            width: 250px;
+            height: 250px;
+
+        }
+
+#cuarto-quienes p, #cuarto-objeto p, #cuarto-mision p, #cuarto-vision p{
+      font-size: 0.8em;
+  }
+#quienes, #objeto, #misionN, #visionN{
+
+      width: 100%;
+      height: 50%;
+      top: 60%;
+      padding: 3% 6% 3% 6%;
+
+  }
+
+  #quienes p, #objeto p, #misionN p, #visionN p{
+
+      font-size: 0.8em;
+  }
+#quienes h2, #objeto h2, #misionN h2, #visionN h2{
+      font-size: 1.5em;
+    }
 }
+
+
 @media (min-width: 481px) and (max-width: 581px) {
   /*--------INICIO--------*/
   header{

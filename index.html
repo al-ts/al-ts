@@ -10,8 +10,7 @@
 <title>E&C</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Yaldevi:wght@500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 
@@ -44,6 +43,12 @@
         <img class="imgsSlide w3-animate-fading" src="imgs/a.jpg" style="width:100%">
         <img class="imgsSlide w3-animate-fading" src="imgs/b.jpg" style="width:100%">
         <img class="imgsSlide w3-animate-fading" src="imgs/c.jpg" style="width:100%">
+        <img class="imgsSlide w3-animate-fading" src="imgs/d.jpg" style="width:100%">
+        <img class="imgsSlide w3-animate-fading" src="imgs/e.jpg" style="width:100%">
+        <img class="imgsSlide w3-animate-fading" src="imgs/f.png" style="width:100%">
+        <img class="imgsSlide w3-animate-fading" src="imgs/g.jpg" style="width:100%">
+        <img class="imgsSlide w3-animate-fading" src="imgs/h.png" style="width:100%">
+        <img class="imgsSlide w3-animate-fading" src="imgs/i.png" style="width:100%">
       </div>
 
     <h2 id="titServ"> ֍ SERVICIOS </h2>
@@ -53,11 +58,12 @@
          <li id="inv"><a>Formación</a>
          <li id="for"><a>Desarollo</a>
          <li id="tal"><a>Planificación</a></li>
-         <li id="pla"><a>Orientación</a></li>
          <li id="ava"><a>Avalúos</a></li>
     </ol>
 
   <article class="secciones">
+
+<div id="introServicios"><p><strong>ESTADÍSTICAS & CONSULTORÍAS SAS</strong> ofrece los siguientes servicios</p></div>
 
     <div id="seccionAnalisis">
         <h2>Consultorías y Asesorías</h2>
@@ -84,16 +90,7 @@
           planeación del desarrollo con una visión prospectiva y en armonía con el
           plan departamental y nacional y que se ajuste a las necesidades de su municipio.</p>
          </div>
-     <div id="seccionPlanifica">
-       <h2>Orientación para el Posconflicto</h2>
-       <p><strong>ESTADÍSTICAS & CONSULTORÍAS SAS</strong> orienta y dirige actividades de desarrollo institucional y social a los entes
-         territoriales con énfasis en: a) acompañamiento a organizaciones sociales
-         en temas de Paz en el marco del posconflicto, b) apoyo en el desarrollo de
-         inactivas y/o trámites relacionados con la construcción de una cultura de
-         paz territorial. c) Apoyo a las comunidades organizadas en la formulación
-         y ejecución de proyectos productivos, d) Asesoría en temas de
-         ordenamiento territorial y ambiental.</p>
-        </div>
+
         <div id="seccionAvaluos">
           <h2>Avalúos</h2>
           <p><strong>ESTADÍSTICAS & CONSULTORÍAS SAS</strong> presta los siguientes
@@ -344,11 +341,14 @@ Estos indicadores se aplicaran durante el ejercicio y de acuerdo a los resultado
       <h2 id="titInst"> ֍ INSTITUCIONAL </h2>
 <article class="secciones">
       <div id = "circulo">
-      <div id = "cuarto-quienes"><p>QUIENES SOMOS</p></div>
+      <div id = "cuarto-quienes" onClick="clickQ1()"><p>QUIENES SOMOS</p></div>
       <div id = "cuarto-objeto"><p>OBJETO SOCIAL</p></div>
       <div id = "cuarto-mision"><p>MISIÓN</p></div>
       <div id = "cuarto-vision"><p>VISIÓN</p></div>
     </div>
+
+    <div id="instIniciales">E&C</<div>
+
     <div id="quienes">
         <h2>Quienes somos</h2>
         <p><strong>Estadísticas y Consultorías SAS</srtong>, es una firma consultora con la
@@ -426,7 +426,7 @@ function carrusel(){
   cont++;
   if(cont > x.length){cont = 1}
   x[cont-1].style.display = "block";
-  setTimeout(carrusel, 8000);
+  setTimeout(carrusel, 3000);
 }
 
 /*------------BARRAS MENU--------------------*/
@@ -457,66 +457,58 @@ $(document).ready(function(){
 
 
     $("#anal").click(function(){
-      $("#anal").css({"background-color": "turquoise", "width":"60%"});
-      $("#inv, #for, #tal, #pla, #ava").css({"background-color": "#0FC400", "width":"50%"});
+      $("#anal").css({"background-color": "LightGreen", "width":"60%"});
+      $("#inv, #for, #tal, #ava").css({"background-color": "LimeGreen", "width":"50%"});
       $(".imgsSlide").css({"width": "0"});
       $("#seccionAnalisis").fadeToggle("slow");
-      $("#seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos").fadeOut("slow");
+      $("#seccionInvestigacion, #seccionFormacion, #seccionFortalece, #seccionAvaluos").fadeOut("slow");
     });
 
     $("#inv").click(function(){
-      $("#inv").css({"background-color": "turquoise", "width":"60%"});
-      $("#anal, #for, #tal, #pla, #ava").css({"background-color": "#0FC400", "width":"50%"});
+      $("#inv").css({"background-color": "LightGreen", "width":"60%"});
+      $("#anal, #for, #tal, #ava").css({"background-color": "LimeGreen", "width":"50%"});
       $(".imgsSlide").css({"width": "0"});
       $("#seccionInvestigacion").fadeToggle("slow");
-      $("#seccionAnalisis, #seccionFormacion, #seccionFortalece, #seccionPlanifica, #seccionAvaluos").fadeOut("slow");
+      $("#seccionAnalisis, #seccionFormacion, #seccionFortalece, #seccionAvaluos").fadeOut("slow");
     });
 
     $("#for").click(function(){
-      $("#for").css({"background-color": "turquoise", "width":"60%"});
-      $("#anal, #inv, #tal, #pla, #ava").css({"background-color": "#0FC400", "width":"50%"});
+      $("#for").css({"background-color": "LightGreen", "width":"60%"});
+      $("#anal, #inv, #tal, #ava").css({"background-color": "LimeGreen", "width":"50%"});
       $(".imgsSlide").css({"width": "0"});
       $("#seccionFormacion").fadeToggle("slow");
-      $("#seccionInvestigacion, #seccionAnalisis, #seccionFortalece, #seccionPlanifica, #seccionAvaluos").fadeOut("slow");
+      $("#seccionInvestigacion, #seccionAnalisis, #seccionFortalece, #seccionAvaluos").fadeOut("slow");
     });
 
     $("#tal").click(function(){
-      $("#tal").css({"background-color": "turquoise", "width":"60%"});
-      $("#anal, #inv, #for, #pla, #ava").css({"background-color": "#0FC400", "width":"50%"});
+      $("#tal").css({"background-color": "LightGreen", "width":"60%"});
+      $("#anal, #inv, #for, #ava").css({"background-color": "LimeGreen", "width":"50%"});
       $(".imgsSlide").css({"width": "0"});
       $("#seccionFortalece").fadeToggle("slow");
-      $("#seccionInvestigacion, #seccionAnalisis, #seccionFormacion, #seccionPlanifica, #seccionAvaluos").fadeOut("slow");
+      $("#seccionInvestigacion, #seccionAnalisis, #seccionFormacion, #seccionAvaluos").fadeOut("slow");
     });
 
-    $("#pla").click(function(){
-      $("#pla").css({"background-color": "turquoise", "width":"60%"});
-      $("#anal, #inv, #for, #tal, #ava").css({"background-color": "#0FC400", "width":"50%"});
-      $(".imgsSlide").css({"width": "0"});
-      $("#seccionPlanifica").fadeToggle("slow");
-      $("#seccionFortalece, #seccionAnalisis, #seccionFormacion, #seccionInvestigacion, #seccionAvaluos").fadeOut("slow");
-    });
 
     $("#ava").click(function(){
-      $("#ava").css({"background-color": "turquoise", "width":"60%"});
-      $("#anal, #inv, #for, #tal, #pla").css({"background-color": "#0FC400", "width":"50%"});
+      $("#ava").css({"background-color": "LightGreen", "width":"60%"});
+      $("#anal, #inv, #for, #tal").css({"background-color": "LimeGreen", "width":"50%"});
       $(".imgsSlide").css({"width": "0"});
       $("#seccionAvaluos").fadeToggle("slow");
-      $("#seccionFortalece,  #seccionAnalisis, #seccionFormacion, #seccionInvestigacion, #seccionPlanifica").fadeOut("slow");
+      $("#seccionFortalece,  #seccionAnalisis, #seccionFormacion, #seccionInvestigacion").fadeOut("slow");
     });
 
   /*-------------------INSTITUCIONAL-------------------*/
 
     $("#inst").click(function(){
-        /*$("#circulo").animate({width: '45%', height:'25%', left: '30%', top:'22%'}, 1500,"swing");*/
         $("#institucional").css({"display":"block"});
-        $("#titInst").animate({left:'49%'}, 2000);
+        //$("#titInst").animate({left:'49%'}, 2000);
         $("#menu").animate({position:'fixed'}, 200);
         $("#visionN, #misionN, #objeto, #quienes").fadeOut("slow");
         $("#cuarto-objeto p, #cuarto-quienes p, #cuarto-mision p, #cuarto-vision p").css({"display":"block"});
-        $("#cuarto-objeto").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
-        $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
-        $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
-        $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
+        $("#cuarto-objeto").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
+        $("#cuarto-mision").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
+        $("#cuarto-vision").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
+        $("#cuarto-quienes").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
         });
     $("#logo").click(function(){
       $("#servicios").css({"display":"block"});
@@ -527,63 +519,49 @@ $(document).ready(function(){
 
     $("#cuarto-quienes").click(function(){
       $("#quienes").fadeToggle("slow");
-      $("#circulo").css({"left": "55%"});
-      $("#cuarto-quienes").css({"position": "absolute", "width":"49%", "height":"49%", "top":"-2%", "display":"block", "background-color":"DarkTurquoise"});
+      $("#cuarto-quienes").css({"position": "absolute", "width":"49%", "height":"49%", "left":"53%", "top":"-2%", "display":"block", "background-color":"LimeGreen"});
         $("#cuarto-quienes p").css({"display":"block"});
-      $("#cuarto-objeto").css({"background-color":"turquoise", "width":"236px", "height":"236px", "top":"2%", "left":"2%"});
-      $("#cuarto-objeto p, #cuarto-mision p, #cuarto-vision p").css({"display":"none"});
+      $("#cuarto-objeto").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
         $("#objeto, #misionN, #visionN").fadeOut("slow");
-      $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
-      $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
+      $("#cuarto-mision").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
+      $("#cuarto-vision").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
 
       });
 
     $("#cuarto-objeto").click(function(){
       $("#objeto").fadeToggle("slow");
-      $("#circulo").css({"left": "55%"});
-      $("#cuarto-objeto").css({"position": "absolute", "width":"49%", "height":"49%", "top":"-2%", "left":"-2%","display":"block", "background-color":"DarkTurquoise"});
+      $("#cuarto-objeto").css({"position": "absolute", "width":"49%", "height":"49%", "top":"-2%", "left":"-2%","display":"block", "background-color":"LimeGreenLimeGreen"});
         $("#cuarto-objeto p").css({"display":"block"});
-      $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%px", "height":"47.5%px", "top":"2%", "left":"51%"});
-      $("#cuarto-quienes p").css({"display":"none"});
+      $("#cuarto-quienes").css({"background-color":"LimeGreen", "width":"47.5%px", "height":"47.5%px", "top":"2%", "left":"51%"});
         $("#quienes").fadeOut("slow");
-      $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%px", "height":"47.5%px", "top":"50%", "left":"2%"});
-      $("#cuarto-mision p").css({"display":"none"});
+      $("#cuarto-mision").css({"background-color":"LimeGreen", "width":"47.5%px", "height":"47.5%px", "top":"50%", "left":"2%"});
         $("#misionN").fadeOut("slow");
-      $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%px", "height":"47.5%px", "top":"50%", "left":"51%"});
-      $("#cuarto-vision p").css({"display":"none"});
+      $("#cuarto-vision").css({"background-color":"LimeGreen", "width":"47.5%px", "height":"47.5%px", "top":"50%", "left":"51%"});
         $("#visionN").fadeOut("slow");
     });
 
   $("#cuarto-mision").click(function(){
     $("#misionN").fadeToggle("slow");
-    $("#circulo").css({"left": "55%"});
-    $("#cuarto-mision").css({"position": "absolute", "width":"49%", "height":"49%", "top":"52%", "left":"-2%","display":"block", "background-color":"DarkTurquoise"});
+    $("#cuarto-mision").css({"position": "absolute", "width":"49%", "height":"49%", "top":"52%", "left":"-2%","display":"block", "background-color":"LimeGreen"});
       $("#cuarto-mision p").css({"display":"block"});
-    $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
-    $("#cuarto-quienes p").css({"display":"none"});
+    $("#cuarto-quienes").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
       $("#quienes").fadeOut("slow");
-    $("#cuarto-objeto").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
-    $("#cuarto-objeto p").css({"display":"none"});
+    $("#cuarto-objeto").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
       $("#objeto").fadeOut("slow");
-    $("#cuarto-vision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
-    $("#cuarto-vision p").css({"display":"none"});
+    $("#cuarto-vision").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"51%"});
       $("#visionN").fadeOut("slow");
 
   });
 
   $("#cuarto-vision").click(function(){
     $("#visionN").fadeToggle("slow");
-    $("#circulo").css({"left": "55%"});
-    $("#cuarto-vision").css({"position": "absolute", "width":"49%", "height":"49%", "top":"52%", "left":"52%","display":"block", "background-color":"DarkTurquoise"});
+    $("#cuarto-vision").css({"position": "absolute", "width":"49%", "height":"49%", "top":"52%", "left":"52%","display":"block", "background-color":"LimeGreen"});
       $("#cuarto-vision p").css({"display":"block"});
-    $("#cuarto-quienes").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
-    $("#cuarto-quienes p").css({"display":"none"});
-        $("#quienes").fadeOut("slow");
-    $("#cuarto-objeto").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
-    $("#cuarto-objeto p").css({"display":"none"});
+    $("#cuarto-quienes").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"51%"});
+      $("#quienes").fadeOut("slow");
+    $("#cuarto-objeto").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"2%", "left":"2%"});
       $("#objeto").fadeOut("slow");
-    $("#cuarto-mision").css({"background-color":"turquoise", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
-    $("#cuarto-mision p").css({"display":"none"});
+    $("#cuarto-mision").css({"background-color":"LimeGreen", "width":"47.5%", "height":"47.5%", "top":"50%", "left":"2%"});
       $("#misionN").fadeOut("slow");
   });
 
@@ -620,13 +598,16 @@ $(document).ready(function(){
 document.addEventListener('DOMContentLoaded', iniciaQueries);
 
   function iniciaQueries(){
-      let queries = window.matchMedia(" (min-width: 261px) and (max-width: 480px)");
+      let queries = window.matchMedia("(min-width: 480px)");
 
         if(queries.matches){
-            document.querySelector('#circulo').style.width = "50%";
-            document.querySelector('#circulo').style.height = "55%";
-        }
-  }
+                document.getElementById("demo").style.left = "18%";
+                document.getElementById("#circulo").style.transition = "all 2s";
+              }else{
+                document.getElementById("demo").style.left = "55%";
+                document.getElementById("#circulo").style.transition = "all 2s";
+              }
+      }
 
 /*---------------------FIN PRUEBAS JS JQ MEDIAQUERIES-----------------*/
 </script>
